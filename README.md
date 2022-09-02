@@ -1,11 +1,11 @@
 # stock-analysis
 
-##Overview of Project
+## Overview of Project
 
 The purpose of this analysis was to understand how to edit, or refactor, a past solution we uncovered during the coursework. The goal was the loop through all the data one time in order to collect the same information that we did while working through the module lessons. Ultimately, we wanted to understand if by refactoring our code we could make the VBA script run faster. Fundamentally, the purpose of the analysis was to give Steve a tool to easily and efficiently understand the stock market prices in order to create a robust, diversified portfolio for his parents.
 
-##Results
-###Stock Performance
+## Results
+### Stock Performance
 
 As shown in the images below, 2017 was a much more successful year for the 12 stocks we have analyzed. TERP is the only stock that had a negative return (-7.2%). In 2018, only two stocks returned a positive value, ENPH and RUN, at 81.9% and 84%, respectively. Although 2018 was a net loss in terms of investments, the RUN stock outperformed itself from 2017 to 2018. In 2017, this stock only had a 5.5% return, where in 2018, this stock had an 84% return rate. This would be a wise stock to invest in. Similarly, although the ENPH stock decreased its return rate from 10`7 to 2018 by 47.6% (129.5% in 2017 to 81.9% in 2018), this would also be a wise stock to invest in because it is one of only two stocks that had a positive return over these two years. 
 
@@ -40,7 +40,7 @@ Worksheets("All Stocks Analysis").Activate
     
 All formatting before the For loop is setting up the headers of the table with more aesthetically pleasing styles. While it looks better, it also helps the viewer understand that "Ticker", "Total Daily Volume" and "Return" are the elements we are sharing a story about. All code within the For loop is assigning each cell to be filled with either Green or Red, according to if the value is greater than or less than 0. 
 
-###Execution Times
+### Execution Times
 
 Below are screenshots of the execution time of our original script, AllStocksAnalysis. This script ran in 0.281 and 0.304 seconds, for 2017 and 2018, respectively.
 
@@ -162,7 +162,7 @@ In our refactored code, we asked the computer to do the same exact thing, but we
     Next I
 
 
-##Summary
+## Summary
 
 The advantages of refactoring code are creating a more efficient or easily understood script. Refactoring can mitigate redundanices in code excessive/confusing code. The disadvantages of refactoring code are accidentally introducing bugs or areas that are more susceptible to breaking. Additionally, if you're working with a team to refactor code, coordination efforts could increase.
 

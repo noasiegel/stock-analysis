@@ -15,10 +15,15 @@ As shown in the images below, 2017 was a much more successful year for the 12 st
 Although the same code is used to analyze the all years of stock data, the formatting section of our refactored code aides us tremendously in analyzing stock performance as compared to our original AllStocksAnalysis macro. By adding visual elements to the table, namely green and red cells, all people of varying levels of analytical skills are able to discern success from failure. The following code is what we used to create this effect:
 
 Worksheets("All Stocks Analysis").Activate
+
     Range("A3:C3").Font.FontStyle = "Bold"
+    
     Range("A3:C3").Borders(xlEdgeBottom).LineStyle = xlContinuous
+    
     Range("B4:B15").NumberFormat = "#,##0"
+    
     Range("C4:C15").NumberFormat = "0.0%"
+    
     Columns("B").AutoFit
 
     dataRowStart = 4

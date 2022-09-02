@@ -14,7 +14,7 @@ As shown in the images below, 2017 was a much more successful year for the 12 st
 
 Although the same code is used to analyze the all years of stock data, the formatting section of our refactored code aides us tremendously in analyzing stock performance as compared to our original AllStocksAnalysis macro. By adding visual elements to the table, namely green and red cells, all people of varying levels of analytical skills are able to discern success from failure. The following code is what we used to create this effect:
 
-Worksheets("All Stocks Analysis").Activate
+    Worksheets("All Stocks Analysis").Activate
 
     Range("A3:C3").Font.FontStyle = "Bold"
     
@@ -59,7 +59,7 @@ After refactoring, or editing this original code, we were able to make it more e
 
 Our refactored code is more efficient simply because of how we ordered, or logically structured, the code. In our original script, we were asking the computer to get the outputs for each column within multiple For loops. We asked the computer to loop through all the tickers and set their volume to 0. Once that step was achieved, we asked the data to loop through all the rows - within this loop we asked the computer to get the total volume for the current ticker. The next loop acted similarly, but instead got the starting price for the curent ticker. The next loop got the ending price for the current ticker. Finally, we output all the findings from the loops to populate in the ceels, including Total Daily Volume and Return. The code looks like this:
 
-'4) Loop through tickers
+    '4) Loop through tickers
    For I = 0 To 11
        Ticker = tickers(I)
        totalVolume = 0

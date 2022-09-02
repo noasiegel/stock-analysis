@@ -60,7 +60,7 @@ After refactoring, or editing this original code, we were able to make it more e
 Our refactored code is more efficient simply because of how we ordered, or logically structured, the code. In our original script, we were asking the computer to get the outputs for each column within multiple For loops. We asked the computer to loop through all the tickers and set their volume to 0. Once that step was achieved, we asked the data to loop through all the rows - within this loop we asked the computer to get the total volume for the current ticker. The next loop acted similarly, but instead got the starting price for the curent ticker. The next loop got the ending price for the current ticker. Finally, we output all the findings from the loops to populate in the ceels, including Total Daily Volume and Return. The code looks like this:
 
     '4) Loop through tickers
-   For I = 0 To 11
+       For I = 0 To 11
        Ticker = tickers(I)
        totalVolume = 0
 
@@ -101,7 +101,7 @@ Our refactored code is more efficient simply because of how we ordered, or logic
 
 In our refactored code, we asked the computer to do the same exact thing, but we used a tickerIndex variable to access the correct index across our four arrays. Essentially, by using tickerIndex, we are telling the code exactly where to look to find what we need. Without using tickerIndex, the program is searching through every row and column to find the desired output. The code looks like this:
 
-1a) Create a ticker Index
+    1a) Create a ticker Index
     
     Dim tickerIndex As Long
     tickerIndex = 0
